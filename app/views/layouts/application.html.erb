@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="">
+  <meta name="KeyWords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+  <link rel="Bookmark" href="/assets/favicon.png" type="image/png">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="image_src" type="image/jpeg" href="/assets/facebook_show.jpg">
+  <meta name="Author" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <!--[if lt IE 8]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- http://mmenu.frebsite.nl/documentation/extensions/fullscreen.html -->
+<!-- http://formstone.it/ -->
+<%= link_to 'index' , root_path%>
+<%= link_to 'about' , about_path%>
+<%= link_to 'service' , service_path%>
+<%= link_to 'product' , product_path%>
+<%= link_to 'contact' , contact_path%>
+<%= yield %>
+</body>
+</html>
