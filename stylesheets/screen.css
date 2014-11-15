@@ -65,14 +65,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 3, ../sass/screen.sass */
 .startup-hide {
-  -moz-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
-  transition-delay: 1s;
-  display: none;
+  -moz-transition-delay: 3s;
+  -o-transition-delay: 3s;
+  -webkit-transition-delay: 3s;
+  transition-delay: 3s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  z-index: 0;
 }
 
-/* line 6, ../sass/screen.sass */
-.column {
+/* line 7, ../sass/screen.sass */
+.columns {
   border: 1px solid red;
 }
