@@ -41,8 +41,8 @@
 </div>
 </div>
 <script>
-$("#startup").addClass("startup-hide");
-// $("#startup").hide();
+$("#startup").delay( 2000 ).fadeOut( 400 );
+
 if (window.navigator.standalone==false||navigator.userAgent.match('CriOS')){
 	$("#addToHomeScreen").css('display','block');
 	if(navigator.userAgent.match('CriOS')){
