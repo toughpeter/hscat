@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 5, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,13 +64,92 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, ../sass/screen.sass */
-.columns {
-  border: 1px solid red;
+/* line 5, ../sass/screen.sass */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 5, ../sass/screen.sass */
+/* line 7, ../sass/screen.sass */
+h1, h2, h3, h4, h5, p, div, p {
+  font-family: "微軟正黑體", "Microsoft JhengHei", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* line 9, ../sass/screen.sass */
+section {
+  padding: 4em;
+}
+
+/* line 11, ../sass/screen.sass */
 .main {
   position: relative;
   z-index: 1;
+}
+
+/* line 14, ../sass/screen.sass */
+.slider {
+  height: 80vh;
+  background-color: #f8d1f9;
+}
+
+/* line 17, ../sass/screen.sass */
+div[class^="taste-"] {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 21, ../sass/screen.sass */
+.taste-1 {
+  background-image: url(../images/slider-1.jpg);
+}
+
+/* line 23, ../sass/screen.sass */
+.taste-2 {
+  background-image: url(../images/slider-2.jpg);
+}
+
+/* line 25, ../sass/screen.sass */
+.taste-3 {
+  background-image: url(../images/slider-3.jpg);
+}
+
+/* line 27, ../sass/screen.sass */
+.taste-4 {
+  background-image: url(../images/slider-4.jpg);
+}
+
+/* line 29, ../sass/screen.sass */
+.taste-5 {
+  background-image: url(../images/slider-5.jpg);
+}
+
+/* line 31, ../sass/screen.sass */
+.slider-for {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 36, ../sass/screen.sass */
+.slider-for h1, .slider-for h2, .slider-for p {
+  text-align: center;
+}
+/* line 38, ../sass/screen.sass */
+.slider-for h1 {
+  font-size: 22px;
+}
+/* line 40, ../sass/screen.sass */
+.slider-for h2 {
+  font-size: 18px;
+}
+
+/* line 44, ../sass/screen.sass */
+footer {
+  background-color: #f39d37;
+  padding: 12px;
+  text-align: center;
+  color: #b9690b;
+  border-bottom: 4px solid #df7f0d;
 }

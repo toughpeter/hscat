@@ -1,7 +1,49 @@
 @import compass/reset
 @import compass/css3
-.columns
-	border: 1px solid red
+$theme: #f39d37
+$helper: #f8d1f9
+*
+	+box-sizing(border-box)
+h1, h2, h3, h4, h5, p, div, p
+	font-family: "微軟正黑體", "Microsoft JhengHei", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+section
+	padding: 4em
 .main
 	position: relative
 	z-index: 1
+.slider
+	height: 80vh
+	background-color: $helper
+div[class^="taste-"]
+	height: 80vh
+	background-size: cover
+	background-position: center
+.taste-1
+	background-image: url(../images/slider-1.jpg)
+.taste-2
+	background-image: url(../images/slider-2.jpg)
+.taste-3
+	background-image: url(../images/slider-3.jpg)
+.taste-4
+	background-image: url(../images/slider-4.jpg)
+.taste-5
+	background-image: url(../images/slider-5.jpg)
+.slider-for
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	h1, h2, p
+		text-align: center
+	h1
+		font-size: 22px
+	h2
+		font-size: 18px
+.contact
+
+footer
+	background-color: $theme
+	padding: 12px
+	text-align: center
+	color: darken($theme, 20%)
+	border-bottom: 4px solid darken($theme, 12%)

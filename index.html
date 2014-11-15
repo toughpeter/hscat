@@ -21,27 +21,97 @@
 		<![endif]-->
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="stylesheets/foundation.min.css">
+		<link rel="stylesheet" href="stylesheets/slick.css">
 		<link rel="stylesheet" href="stylesheets/screen.css">
 		<link rel="apple-touch-icon-precomposed" href="images/icon.png">
 		<link rel="shortcut icon" size="196x196" href="images/icon.png">
 		<link rel="apple-touch-startup-image" href="images/startup.png">
 		<script src="js/jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>
 
 
 </head>
 <body>
-<img src="images/startup.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 2;" id="startup">
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <div class="main">
 
-<div class="row">
-  <div class="small-2 medium-12 large-4 columns">1</div>
-  <div class="small-4 medium-12 large-4 columns">2</div>
-  <div class="small-6 medium-12 large-4 columns">3</div>
+<div class="slider">
+	<div class="taste-1">
+	</div>
+	<div class="taste-2">
+	</div>
+	<div class="taste-3">
+	</div>
+	<div class="taste-4">
+	</div>
+	<div class="taste-5">
+	</div>
 </div>
+
+<div class="slider-for">
+	<div>
+		<h1>義式臘腸 - 刺激味覺微辣體驗</h1>
+		<h2>$110 / $720</h2>
+		<p>帶點微辣黑胡椒的義式臘腸，搭配墨西哥辣椒，絕對是愛吃辣朋友的首選，更是挑醒味蕾的絕妙體驗。</p>
+	</div>
+	<div>
+		<h1>BBQ烤雞 - 享肉主義滋味豐富</h1>
+		<h2>$105 / $690</h2>
+		<p>大塊厚切雞肉，經過主廚特調醬汁醃製及分段式烘烤，讓雞肉維持軟嫩口感，搭配鮮蔬，淋上BBQ醬汁，不但每一口都有豐富餡料，也有大口吃肉的感覺。</p>
+	</div>
+	<div>
+		<h1>夏威夷 - 肉香融合水果清甜香</h1>
+		<h2>$95 / $620</h2>
+		<p>堅持不用罐頭，每日手工現切鳳梨，烤過的培根香氣四溢，加上鳳梨天然的清甜香，和諧地在口中融合。</p>
+	</div>
+</div>
+<section>
+	<div class="story">
+		
+	</div>
+</section>
+<section>
+	<div class="row">
+	  <div class="small-12 medium-4 large-4 columns">feature1</div>
+	  <div class="small-12 medium-4 large-4 columns">feature2</div>
+	  <div class="small-12 medium-4 large-4 columns">feature3</div>
+	</div>
+</section>
+<section>
+	<div class="contact">
+		contact
+	</div>
+</section>
+<footer>
+	搶救肥貓大作戰——Startup Weekend廈門
+</footer>
 </div>
 <script>
-$("#startup").delay( 4000 ).fadeOut( 400 );
+$(document).ready(function(){
+	$('.slider').slick({
+		dots: true,
+		infinite: true,
+		centerMode: true,
+		centerPadding: '0px',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+	    arrows: false
+
+	});
+	 $('.slider-for').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: false,
+	    fade: true,
+		infinite: true,
+	    asNavFor: '.slider'
+	});
+	$("footer").css({color:"white"});
+	$(".slider-for").show();
+	$("body").addClass("slider-tall");
+
+});
 
 if (window.navigator.standalone==false||navigator.userAgent.match('CriOS')){
 	$("#addToHomeScreen").css('display','block');
