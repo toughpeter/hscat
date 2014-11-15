@@ -67,3 +67,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .columns {
   border: 1px solid red;
 }
+
+/* line 5, ../sass/screen.sass */
+.main {
+  position: relative;
+  z-index: 1;
+}

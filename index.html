@@ -30,7 +30,7 @@
 
 </head>
 <body>
-<img src="images/startup.png" style="width: 100%; position: absolute; left: 0; top: 0;" id="startup">
+<img src="images/startup.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 2;" id="startup">
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <div class="main">
 
@@ -41,7 +41,7 @@
 </div>
 </div>
 <script>
-$("#startup").delay( 5000 ).fadeOut( 400 );
+$("#startup").delay( 4000 ).fadeOut( 400 );
 
 if (window.navigator.standalone==false||navigator.userAgent.match('CriOS')){
 	$("#addToHomeScreen").css('display','block');
