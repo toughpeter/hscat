@@ -30,11 +30,58 @@
 
 </head>
 <body>
-<a href="app2.html">
-<img src="images/app1.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 2;" id="startup">
-</a>
+<img src="images/app10.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 1; display: none;" id="app10">
+<img src="images/app9.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 2; display: none;" id="app9">
+<img src="images/app8.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 3; display: none;" id="app8">
+<img src="images/app7.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 4; display: none;" id="app7">
+<img src="images/app6.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 5; display: none;" id="app6">
+<img src="images/app5.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 6; display: none;" id="app5">
+<img src="images/app4.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 7; display: none;" id="app4">
+<img src="images/app3.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 8; display: none;" id="app3">
+<img src="images/app2.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 9; display: none;" id="app2">
+<img src="images/app1.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10;" id="startup">
+
 <script>
-$("#startup").fadeIn( 400 );
+
+$( "#startup" ).click(function() {
+	$("#startup").fadeOut();
+	$("#app2").fadeIn();
+});
+
+$( "#app2" ).click(function() {
+	$("#app2").fadeOut();
+	$("#app3").fadeIn();
+});
+
+$( "#app3" ).click(function() {
+	$("#app3").fadeOut();
+	$("#app4").fadeIn();
+});
+$( "#app4" ).click(function() {
+	$("#app4").fadeOut();
+	$("#app5").fadeIn();
+});
+$( "#app5" ).click(function() {
+	$("#app5").fadeOut();
+	$("#app6").fadeIn();
+});
+$( "#app6" ).click(function() {
+	$("#app6").fadeOut();
+	$("#app7").fadeIn();
+});
+$( "#app7" ).click(function() {
+	$("#app7").fadeOut();
+	$("#app8").fadeIn();
+});
+$( "#app8" ).click(function() {
+	$("#app8").fadeOut();
+	$("#app9").fadeIn();
+});
+$( "#app9" ).click(function() {
+	$("#app9").fadeOut();
+	$("#app10").fadeIn();
+});
+
 
 if (window.navigator.standalone==false||navigator.userAgent.match('CriOS')){
 	$("#addToHomeScreen").css('display','block');
