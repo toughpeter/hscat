@@ -62,3 +62,17 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 3, ../sass/screen.sass */
+.startup-hide {
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+  display: none;
+}
+
+/* line 6, ../sass/screen.sass */
+.column {
+  border: 1px solid red;
+}

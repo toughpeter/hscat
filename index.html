@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Pizza</title>
+		<title>躲貓貓</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="title" content="Startup Weekend">
@@ -20,14 +20,17 @@
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 		<![endif]-->
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="stylesheets" href="stylesheets/foundation.min.css">
-		<link rel="stylesheets" href="stylesheets/screen.css">
+		<link rel="stylesheet" href="stylesheets/foundation.min.css">
+		<link rel="stylesheet" href="stylesheets/screen.css">
 		<link rel="apple-touch-icon-precomposed" href="images/icon.png">
 		<link rel="shortcut icon" size="196x196" href="images/icon.png">
-		<link rel="apple-touch-startup-image" size="640x1136" href="images/startup.png">
+		<link rel="apple-touch-startup-image" href="images/startup.png">
+		<script src="js/jquery.min.js"></script>
+
 
 </head>
 <body>
+<img src="images/startup.png" style="width: 100%; position: absolute; left: 0; top: 0;" id="startup">
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <div class="main">
 
@@ -38,15 +41,8 @@
 </div>
 </div>
 <script>
-$(".menu-trigger").click(function(){
-		$(".pizza-trigger").stop().toggle();
-		$(".menu-trigger").stop().toggleClass("go");
-		$("img[class^='menu-']").stop().toggleClass("fade");
-		$(".menu").stop().slideToggle(250);
-		$("#call").stop().fadeToggle(100);
-		$("footer").stop().toggleClass("push-up");
-
-});
+$("#startup").addClass("startup-hide");
+$("#startup").hide();
 if (window.navigator.standalone==false||navigator.userAgent.match('CriOS')){
 	$("#addToHomeScreen").css('display','block');
 	if(navigator.userAgent.match('CriOS')){
