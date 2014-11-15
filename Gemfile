@@ -25,14 +25,6 @@ end
 # For Heroku
 # ---------------------------
 
-
-gem 'bootstrap-sass'
-gem 'faker'
-gem 'devise'
-gem 'carrierwave'
-
-
-
 # ---------------------------
 # For Peter front-end
 # ---------------------------
@@ -46,19 +38,14 @@ group :development do
 	gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
 end
 
-
 # ---------------------------
 # For Peter front-end
 # ---------------------------
-
 
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-
-
-gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
