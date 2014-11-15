@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="stylesheets/screen.css">
 		<link rel="apple-touch-icon-precomposed" href="image/icon.png">
 		<link rel="shortcut icon" size="196x196" href="image/icon.png">
+		<link rel="apple-touch-startup-image" href="image/startup.png">
 
 </head>
 <body>
@@ -46,7 +47,12 @@ $(".menu-trigger").click(function(){
 		$("footer").stop().toggleClass("push-up");
 
 });
-
+if (window.navigator.standalone==false||navigator.userAgent.match('CriOS')){
+	$("#addToHomeScreen").css('display','block');
+	if(navigator.userAgent.match('CriOS')){
+		$("#addToHomeScreen").html('請用<span>Safari</span>打開網址並安裝！')
+	}
+}
 </script>
 </body>
 </html>
