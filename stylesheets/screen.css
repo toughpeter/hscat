@@ -150,57 +150,82 @@ div[class^="taste-"] {
 .ring, .ball, .cat-wrap {
   width: 180px;
   height: 180px;
-  margin: 80px auto;
+  margin: 80px auto 40px auto;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 51, ../sass/screen.sass */
+.ring:hover, .ball:hover, .cat-wrap:hover {
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  -moz-transition: all 0.2s cubic-bezier(0.26, -0.03, 0.28, 1.58);
+  -o-transition: all 0.2s cubic-bezier(0.26, -0.03, 0.28, 1.58);
+  -webkit-transition: all 0.2s cubic-bezier(0.26, -0.03, 0.28, 1.58);
+  transition: all 0.2s cubic-bezier(0.26, -0.03, 0.28, 1.58);
 }
 
-/* line 50, ../sass/screen.sass */
+/* line 55, ../sass/screen.sass */
+.story {
+  padding: 120px 0;
+  background-image: url(../images/hero.png);
+  background-size: 520px;
+  background-repeat: no-repeat;
+  bacgground-position: right top;
+}
+
+/* line 61, ../sass/screen.sass */
 .feature {
+  padding: 120px 0;
   border-bottom: 4px solid #c80048;
 }
-/* line 52, ../sass/screen.sass */
+/* line 64, ../sass/screen.sass */
 .feature h1 {
   font-size: 24px;
   text-align: center;
   line-height: 28px;
   margin-bottom: 16px;
 }
-/* line 57, ../sass/screen.sass */
+/* line 69, ../sass/screen.sass */
 .feature p {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
 }
 
-/* line 62, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 .ring {
   background-image: url(../images/ring.png);
 }
 
-/* line 64, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 .ball {
   background-image: url(../images/ball.png);
 }
 
-/* line 66, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 .cat-wrap {
   background-image: url(../images/cat-wrap.png);
 }
 
-/* line 69, ../sass/screen.sass */
+/* line 81, ../sass/screen.sass */
 .contact {
   padding: 160px 20px;
   background-color: #fffbf7;
 }
-/* line 72, ../sass/screen.sass */
+/* line 84, ../sass/screen.sass */
 .contact h2 {
   font-size: 28px;
   text-align: center;
   color: #f39d37;
 }
-/* line 76, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 .contact input {
   margin: 40px auto;
   width: 100%;
@@ -208,7 +233,7 @@ div[class^="taste-"] {
   height: 40px;
   padding: 0 20px;
 }
-/* line 83, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 .contact a {
   padding: 12px;
   max-width: 120px;
@@ -219,7 +244,7 @@ div[class^="taste-"] {
   display: block;
 }
 
-/* line 91, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 footer {
   background-color: #f39d37;
   padding: 12px;

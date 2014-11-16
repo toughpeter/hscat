@@ -43,11 +43,23 @@ div[class^="taste-"]
 .ring, .ball, .cat-wrap
 	width: 180px
 	height: 180px
-	margin: 80px auto
+	margin: 80px auto 40px auto
 	background-size: contain
 	background-position: center center
 	background-repeat: no-repeat
+	+transition(0.3s)
+	&:hover
+		+scale(1.2)
+		+transition(all 0.2s cubic-bezier(.26,-0.03,.28,1.58))
+
+.story
+	padding: 120px 0
+	background-image: url(../images/hero.png)
+	background-size: 520px
+	background-repeat: no-repeat
+	bacgground-position: right top
 .feature
+	padding: 120px 0
 	border-bottom: 4px solid $helper
 	h1
 		font-size: 24px
