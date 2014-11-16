@@ -74,82 +74,156 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 7, ../sass/screen.sass */
 h1, h2, h3, h4, h5, p, div, p {
   font-family: "微軟正黑體", "Microsoft JhengHei", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #373737;
 }
 
-/* line 9, ../sass/screen.sass */
+/* line 10, ../sass/screen.sass */
 section {
   padding: 4em;
 }
 
-/* line 11, ../sass/screen.sass */
+/* line 12, ../sass/screen.sass */
 .main {
   position: relative;
   z-index: 1;
 }
 
-/* line 14, ../sass/screen.sass */
+/* line 15, ../sass/screen.sass */
 .slider {
   height: 80vh;
-  background-color: #f8d1f9;
+  background-color: #c80048;
 }
 
-/* line 17, ../sass/screen.sass */
+/* line 18, ../sass/screen.sass */
 div[class^="taste-"] {
   height: 80vh;
   background-size: cover;
   background-position: center;
 }
 
-/* line 21, ../sass/screen.sass */
+/* line 22, ../sass/screen.sass */
 .taste-1 {
   background-image: url(../images/slider-1.jpg);
 }
 
-/* line 23, ../sass/screen.sass */
+/* line 24, ../sass/screen.sass */
 .taste-2 {
   background-image: url(../images/slider-2.jpg);
 }
 
-/* line 25, ../sass/screen.sass */
+/* line 26, ../sass/screen.sass */
 .taste-3 {
   background-image: url(../images/slider-3.jpg);
 }
 
-/* line 27, ../sass/screen.sass */
+/* line 28, ../sass/screen.sass */
 .taste-4 {
   background-image: url(../images/slider-4.jpg);
 }
 
-/* line 29, ../sass/screen.sass */
+/* line 30, ../sass/screen.sass */
 .taste-5 {
   background-image: url(../images/slider-5.jpg);
 }
 
-/* line 31, ../sass/screen.sass */
+/* line 32, ../sass/screen.sass */
 .slider-for {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
-/* line 36, ../sass/screen.sass */
+/* line 37, ../sass/screen.sass */
 .slider-for h1, .slider-for h2, .slider-for p {
   text-align: center;
 }
-/* line 38, ../sass/screen.sass */
+/* line 39, ../sass/screen.sass */
 .slider-for h1 {
   font-size: 22px;
 }
-/* line 40, ../sass/screen.sass */
+/* line 41, ../sass/screen.sass */
 .slider-for h2 {
   font-size: 18px;
 }
 
-/* line 44, ../sass/screen.sass */
+/* line 43, ../sass/screen.sass */
+.ring, .ball, .cat-wrap {
+  width: 180px;
+  height: 180px;
+  margin: 80px auto;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 50, ../sass/screen.sass */
+.feature {
+  border-bottom: 4px solid #c80048;
+}
+/* line 52, ../sass/screen.sass */
+.feature h1 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+/* line 57, ../sass/screen.sass */
+.feature p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 62, ../sass/screen.sass */
+.ring {
+  background-image: url(../images/ring.png);
+}
+
+/* line 64, ../sass/screen.sass */
+.ball {
+  background-image: url(../images/ball.png);
+}
+
+/* line 66, ../sass/screen.sass */
+.cat-wrap {
+  background-image: url(../images/cat-wrap.png);
+}
+
+/* line 69, ../sass/screen.sass */
+.contact {
+  padding: 160px 20px;
+  background-color: #fffbf7;
+}
+/* line 72, ../sass/screen.sass */
+.contact h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #f39d37;
+}
+/* line 76, ../sass/screen.sass */
+.contact input {
+  margin: 40px auto;
+  width: 100%;
+  max-width: 360px;
+  height: 40px;
+  padding: 0 20px;
+}
+/* line 83, ../sass/screen.sass */
+.contact a {
+  padding: 12px;
+  max-width: 120px;
+  text-align: center;
+  background-color: #c80048;
+  color: white;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 91, ../sass/screen.sass */
 footer {
   background-color: #f39d37;
   padding: 12px;
   text-align: center;
   color: #b9690b;
-  border-bottom: 4px solid #df7f0d;
+  border-bottom: 4px solid #c30046;
 }
