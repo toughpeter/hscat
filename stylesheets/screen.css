@@ -173,78 +173,81 @@ div[class^="taste-"] {
 
 /* line 55, ../sass/screen.sass */
 .story {
-  padding: 120px 0;
+  padding: 220px 0;
   background-image: url(../images/hero.png);
   background-size: 520px;
   background-repeat: no-repeat;
-  bacgground-position: right top;
+  background-position: left top;
+  background-attachment: fixed;
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 61, ../sass/screen.sass */
+/* line 63, ../sass/screen.sass */
 .feature {
   padding: 120px 0;
   border-bottom: 4px solid #c80048;
 }
-/* line 64, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 .feature h1 {
   font-size: 24px;
   text-align: center;
   line-height: 28px;
   margin-bottom: 16px;
 }
-/* line 69, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 .feature p {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
 }
 
-/* line 74, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 .ring {
   background-image: url(../images/ring.png);
 }
 
-/* line 76, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 .ball {
   background-image: url(../images/ball.png);
 }
 
-/* line 78, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 .cat-wrap {
   background-image: url(../images/cat-wrap.png);
 }
 
-/* line 81, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 .contact {
   padding: 160px 20px;
   background-color: #fffbf7;
 }
-/* line 84, ../sass/screen.sass */
+/* line 86, ../sass/screen.sass */
 .contact h2 {
   font-size: 28px;
   text-align: center;
   color: #f39d37;
 }
-/* line 88, ../sass/screen.sass */
-.contact input {
-  margin: 40px auto;
-  width: 100%;
-  max-width: 360px;
-  height: 40px;
-  padding: 0 20px;
-}
-/* line 95, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 .contact a {
-  padding: 12px;
-  max-width: 120px;
+  padding: 12px 24px;
+  max-width: 180px;
   text-align: center;
   background-color: #c80048;
   color: white;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   display: block;
+  font-size: 22px;
+  border: 2px solid #c80048;
+}
+/* line 101, ../sass/screen.sass */
+.contact a:hover {
+  background-color: white;
+  color: #c80048;
 }
 
-/* line 103, ../sass/screen.sass */
+/* line 106, ../sass/screen.sass */
 footer {
   background-color: #f39d37;
   padding: 12px;

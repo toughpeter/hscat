@@ -53,11 +53,13 @@ div[class^="taste-"]
 		+transition(all 0.2s cubic-bezier(.26,-0.03,.28,1.58))
 
 .story
-	padding: 120px 0
+	padding: 220px 0
 	background-image: url(../images/hero.png)
 	background-size: 520px
 	background-repeat: no-repeat
-	bacgground-position: right top
+	background-position: left top
+	background-attachment: fixed
+	+box-shadow(2px 2px 2px rgba(#000000, 0.2))
 .feature
 	padding: 120px 0
 	border-bottom: 4px solid $helper
@@ -85,21 +87,22 @@ div[class^="taste-"]
 		font-size: 28px
 		text-align: center
 		color: $theme
-	input
-		margin: 40px auto
-		width: 100%
-		max-width: 360px
-		height: 40px
-		padding: 0 20px
-
 	a
-		padding: 12px
-		max-width: 120px
+
+		padding: 12px 24px
+		max-width: 180px
 		text-align: center
 		background-color: $helper
 		color: white
-		margin: 0 auto
+		margin: 40px auto 0 auto
 		display: block
+		font-size: 22px
+		border: 2px solid $helper
+		&:hover
+			background-color: white
+			color: $helper
+
+		
 footer
 	background-color: $theme
 	padding: 12px
