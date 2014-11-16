@@ -41,7 +41,7 @@
 <img src="images/app4.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 5; display: none;" id="app5">
 
 <img src="images/room.gif" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 8; display: none;" id="app4">
-<img src="images/app3.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none;" id="app3">
+<img src="images/app3.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 7; display: none;" id="app3">
 
 
 
@@ -75,7 +75,7 @@ $( "#app3" ).click(function() {
 });
 $( "#app4" ).click(function() {
 	$("#app3").fadeOut();
-	$("#app4").slideUp();
+	$("#app4").fadeOut();
 	$("#app5").fadeIn();
 });
 $( "#app5" ).click(function() {
