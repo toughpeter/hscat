@@ -32,7 +32,8 @@
 </head>
 <body class="demo-body">
 <div class="demo">
-	<img src="images/app1.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10;" id="startup">
+	<img src="images/home.jpg" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10;" id="home">
+	<img src="images/app1.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none;" id="startup">
 	<img src="images/app2.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none;" id="app2">
 	<div id="app-black" style="display: none;" ></div>
 
@@ -53,7 +54,10 @@
 </div>
 <img src="images/app2.png" style="width: 0%; position: absolute;">
 <script>
-
+$( "#home" ).click(function() {
+	$("#home").fadeOut();
+	$("#startup").fadeIn();
+});
 $( "#startup" ).click(function() {
 	$("#startup").fadeOut();
 	$("#app2").fadeIn();
