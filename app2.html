@@ -32,7 +32,7 @@
 </head>
 <body>
 <img src="images/app4.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10;" id="startup">
-<img src="images/app9.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none;" id="app2">
+<div id="app6"></div>
 
 
 
@@ -44,12 +44,9 @@
 
 $( "#startup" ).click(function() {
 	$("#startup").fadeOut();
-	$("#app2").fadeIn();
+	$("#app6").fadeIn();
 });
 
-$( "#app2" ).click(function() {
-	$("#app2").fadeOut();
-});
 
 
 if (window.navigator.standalone==false||navigator.userAgent.match('CriOS')){
