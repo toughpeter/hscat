@@ -34,13 +34,11 @@
 <img src="images/app1.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10;" id="startup">
 <img src="images/app2.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none;" id="app2">
 
-<img src="images/app10.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 1; display: none;" id="app9">
-<img src="images/app6.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 2; display: none;" id="app8">
-<img src="images/app5.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 3; display: none;" id="app7">
-<div style="width: 100%; position: absolute; left: 0; top: 0; z-index: 4; display: none;" id="app6"></div>
-<img src="images/app4.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 5; display: none;" id="app5">
-
+<img src="images/app10.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 1; display: none;" id="app7">
+<img src="images/app6.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 2; display: none;" id="app6">
+<img src="images/app5.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 3; display: none;" id="app5">
 <img src="images/room.gif" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 8; display: none;" id="app4">
+<div id="x" style="width: 64px; height: 64px; font-size: 64px; color: white; font-weight: bold; position: absolute; right: 0; top: 0; z-index: 9; display: none;" >X</div>
 <img src="images/app3.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 7; display: none;" id="app3">
 
 
@@ -72,11 +70,13 @@ $( "#app2" ).click(function() {
 
 $( "#app3" ).click(function() {
 	$("#app4").slideDown(500);
+	$("#x").fadeIn(300);
 });
-$( "#app4" ).click(function() {
-	$("#app3").fadeOut();
-	$("#app4").fadeOut();
-	$("#app5").fadeIn();
+$( "#x" ).click(function() {
+	$("#app3").hide();
+	$("#x").fadeOut();
+	$("#app4").slideUp();
+	$("#app5").show();
 });
 $( "#app5" ).click(function() {
 	$("#app5").fadeOut();
