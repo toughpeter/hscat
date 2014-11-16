@@ -357,7 +357,7 @@ div[class^="taste-"] {
   /* line 179, ../sass/screen.sass */
   .story {
     padding: 20px 0 0 0;
-    background-size: 360px;
+    background-size: 280px;
     background-position: 28% 40px;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -371,15 +371,26 @@ div[class^="taste-"] {
     right: 0;
     text-align: center;
     width: 80%;
-    margin: 300px auto;
+    margin: 320px auto;
+  }
+  /* line 194, ../sass/screen.sass */
+  .story h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  /* line 198, ../sass/screen.sass */
+  .story h2 {
+    font-size: 18px;
+    text-align: center;
   }
 }
-/* line 194, ../sass/screen.sass */
+/* line 201, ../sass/screen.sass */
 .feature {
   padding: 120px 0 90px 0;
   border-bottom: 8px solid rgba(243, 157, 55, 0.7);
 }
-/* line 197, ../sass/screen.sass */
+/* line 204, ../sass/screen.sass */
 .feature h1 {
   font-size: 24px;
   text-align: center;
@@ -387,7 +398,7 @@ div[class^="taste-"] {
   margin-bottom: 16px;
   color: #905a17;
 }
-/* line 204, ../sass/screen.sass */
+/* line 211, ../sass/screen.sass */
 .feature p {
   font-size: 16px;
   line-height: 24px;
@@ -395,34 +406,34 @@ div[class^="taste-"] {
   color: #905a17;
 }
 
-/* line 212, ../sass/screen.sass */
+/* line 219, ../sass/screen.sass */
 .ring {
   background-image: url(../images/ring.png);
 }
 
-/* line 214, ../sass/screen.sass */
+/* line 221, ../sass/screen.sass */
 .ball {
   background-image: url(../images/ball.png);
 }
 
-/* line 216, ../sass/screen.sass */
+/* line 223, ../sass/screen.sass */
 .cat-wrap {
   background-image: url(../images/cat-wrap.png);
 }
 
-/* line 219, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 .contact {
   padding: 160px 20px;
   background-color: #fffbf7;
   background-color: #c80048;
 }
-/* line 223, ../sass/screen.sass */
+/* line 230, ../sass/screen.sass */
 .contact h2 {
   font-size: 28px;
   text-align: center;
   color: #fbc4d0;
 }
-/* line 227, ../sass/screen.sass */
+/* line 234, ../sass/screen.sass */
 .contact a {
   padding: 12px 24px;
   max-width: 180px;
@@ -434,13 +445,13 @@ div[class^="taste-"] {
   font-size: 22px;
   border: 2px solid white;
 }
-/* line 238, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
 .contact a:hover {
   background-color: white;
   color: #c80048;
 }
 
-/* line 243, ../sass/screen.sass */
+/* line 250, ../sass/screen.sass */
 footer {
   background-color: #f39d37;
   padding: 12px;
