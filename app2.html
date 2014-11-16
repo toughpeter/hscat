@@ -19,6 +19,7 @@
 		<!--[if lt IE 8]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 		<![endif]-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="stylesheet" href="stylesheets/foundation.min.css">
 		<link rel="stylesheet" href="stylesheets/screen.css">
@@ -30,8 +31,25 @@
 
 </head>
 <body>
-<img src="images/app2.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 2;">
+<img src="images/app4.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10;" id="startup">
+<img src="images/app9.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none;" id="app2">
+
+
+
+
+
+<img src="images/app9.png" style="width: 0%; position: absolute;">
+<img src="images/app4.png" style="width: 0%; position: absolute;">
 <script>
+
+$( "#startup" ).click(function() {
+	$("#startup").fadeOut();
+	$("#app2").fadeIn();
+});
+
+$( "#app2" ).click(function() {
+	$("#app2").fadeOut();
+});
 
 
 if (window.navigator.standalone==false||navigator.userAgent.match('CriOS')){
