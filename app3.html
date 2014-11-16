@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>躲貓貓</title>
+		<title>肥貓大作戰</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="title" content="Startup Weekend">
@@ -31,18 +31,18 @@
 
 </head>
 <body>
-<div class="demo">
-	<img src="images/appp1.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10;" id="startup">
-	<img src="images/appp2.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none;" id="app2">
+<div class="ios-demo">
+	<div style="background-image: url(images/appp1.png); width: 100%; position: absolute; left: 0; top: 0; z-index: 10;" id="startup" class="ios-pic"></div>
+	<div style="background-image: url(images/appp2.png); width: 100%; position: absolute; left: 0; top: 0; z-index: 10; display: none;" id="app2" class="ios-pic"></div>
 	<div id="app-black" style="display: none;" ></div>
 
-	<img src="images/appp8.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 1; display: none;" id="app8">
-	<img src="images/appp7.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 1; display: none;" id="app7">
-	<img src="images/appp6.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 2; display: none;" id="app6">
-	<img src="images/appp5.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 3; display: none;" id="app5">
+	<div style="background-image: url(images/appp8.png); width: 100%; position: absolute; left: 0; top: 0; z-index: 1; display: none;" id="app8" class="ios-pic"></div>
+	<div style="background-image: url(images/appp7.png); width: 100%; position: absolute; left: 0; top: 0; z-index: 1; display: none;" id="app7" class="ios-pic"></div>
+	<div style="background-image: url(images/appp6.png); width: 100%; position: absolute; left: 0; top: 0; z-index: 2; display: none;" id="app6" class="ios-pic"></div>
+	<div style="background-image: url(images/appp5.png); width: 100%; position: absolute; left: 0; top: 0; z-index: 3; display: none;" id="app5" class="ios-pic"></div>
 	<img src="images/room.gif" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 8; display: none;" id="app4">
-	<div id="x" style="width: 64px; height: 56px; font-size: 80px; color: white; font-weight: bold; position: absolute; right: -12px; top: -16px; z-index: 9; display: none; outline: none;" >&#215;</div>
-	<img src="images/appp3.png" style="width: 100%; position: absolute; left: 0; top: 0; z-index: 7; display: none;" id="app3">
+	<div id="x" style="width: 64px; height: 56px; font-size: 80px; color: white; font-weight: bold; position: absolute; right: -12px; top: -16px; z-index: 9; display: none; outline: none;" class="ios-pic">&#215;</div>
+	<div style="background-image: url(images/appp3.png); width: 100%; position: absolute; left: 0; top: 0; z-index: 7; display: none;" id="app3" class="ios-pic"></div>
 
 
 
@@ -51,7 +51,7 @@
 
 
 </div>
-<img src="images/appp2.png" style="width: 0%; position: absolute;">
+<div style="background-image: url(images/appp2.png); width: 0%; position: absolute;"></div>
 <script>
 
 $( "#startup" ).click(function() {
