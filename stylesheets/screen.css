@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 5, ../sass/screen.sass */
+/* line 6, ../sass/screen.sass */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -72,82 +72,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 8, ../sass/screen.sass */
+/* line 9, ../sass/screen.sass */
 h1, h2, h3, h4, h5, p, div, p {
   font-family: "微軟正黑體", "Microsoft JhengHei", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #373737;
 }
 
-/* line 11, ../sass/screen.sass */
+/* line 12, ../sass/screen.sass */
 section {
-  padding: 4em;
+  padding: 4em 1em;
 }
 
-/* line 13, ../sass/screen.sass */
+/* line 14, ../sass/screen.sass */
 .main {
   position: relative;
   z-index: 1;
 }
 
-/* line 16, ../sass/screen.sass */
+/* line 17, ../sass/screen.sass */
 .slider {
   height: 80vh;
   background-color: #c80048;
 }
 
-/* line 19, ../sass/screen.sass */
-div[class^="taste-"] {
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-}
-
-/* line 23, ../sass/screen.sass */
-.taste-1 {
-  background-image: url(../images/slider-1.jpg);
-}
-
-/* line 25, ../sass/screen.sass */
-.taste-2 {
-  background-image: url(../images/slider-2.jpg);
-}
-
-/* line 27, ../sass/screen.sass */
-.taste-3 {
-  background-image: url(../images/slider-3.jpg);
-}
-
-/* line 29, ../sass/screen.sass */
-.taste-4 {
-  background-image: url(../images/slider-4.jpg);
-}
-
-/* line 31, ../sass/screen.sass */
-.taste-5 {
-  background-image: url(../images/slider-5.jpg);
-}
-
-/* line 33, ../sass/screen.sass */
+/* line 20, ../sass/screen.sass */
 .slider-for {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
-/* line 38, ../sass/screen.sass */
+/* line 25, ../sass/screen.sass */
 .slider-for h1, .slider-for h2, .slider-for p {
   text-align: center;
 }
-/* line 40, ../sass/screen.sass */
+/* line 27, ../sass/screen.sass */
 .slider-for h1 {
   font-size: 22px;
 }
-/* line 42, ../sass/screen.sass */
+/* line 29, ../sass/screen.sass */
 .slider-for h2 {
   font-size: 18px;
 }
 
-/* line 44, ../sass/screen.sass */
+/* line 31, ../sass/screen.sass */
 .ring, .ball, .cat-wrap {
   width: 180px;
   height: 180px;
@@ -160,7 +128,7 @@ div[class^="taste-"] {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 52, ../sass/screen.sass */
+/* line 39, ../sass/screen.sass */
 .ring:hover, .ball:hover, .cat-wrap:hover {
   -moz-transform: scale(1.2, 1.2);
   -ms-transform: scale(1.2, 1.2);
@@ -172,12 +140,12 @@ div[class^="taste-"] {
   transition: all 0.2s cubic-bezier(0.26, -0.03, 0.28, 1.58);
 }
 
-/* line 55, ../sass/screen.sass */
+/* line 42, ../sass/screen.sass */
 .fin {
   padding-bottom: 80px;
   border: 2px solid transparent;
 }
-/* line 59, ../sass/screen.sass */
+/* line 46, ../sass/screen.sass */
 .fin:hover {
   -moz-transform: scale(1.02, 1.02);
   -ms-transform: scale(1.02, 1.02);
@@ -191,7 +159,7 @@ div[class^="taste-"] {
 }
 
 @media screen and (min-width: 961px) {
-  /* line 64, ../sass/screen.sass */
+  /* line 51, ../sass/screen.sass */
   .story {
     padding: 27% 0;
     background-image: url(../images/hero.png);
@@ -204,45 +172,95 @@ div[class^="taste-"] {
     -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   }
-  /* line 73, ../sass/screen.sass */
+  /* line 60, ../sass/screen.sass */
   .story .intro {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     position: absolute;
-    right: 6%;
-    text-align: right;
-    width: 420px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 620px;
   }
-  /* line 79, ../sass/screen.sass */
+  /* line 68, ../sass/screen.sass */
   .story h1 {
     font-size: 50px;
     margin-bottom: 16px;
-    text-align: right;
   }
-  /* line 83, ../sass/screen.sass */
+  /* line 72, ../sass/screen.sass */
   .story h2 {
-    font-size: 32px;
-    text-align: right;
+    font-size: 28px;
   }
-  /* line 86, ../sass/screen.sass */
+  /* line 75, ../sass/screen.sass */
   .story a {
-    padding: 12px 24px;
-    max-width: 180px;
+    height: 96px;
+    width: 240px;
     text-align: center;
+    display: block;
     background-color: #c80048;
     color: white;
-    line-height: 80px;
-    display: inline;
-    font-size: 22px;
     border: 2px solid #c80048;
+    background-size: auto 72px;
+    background-repeat: no-repeat;
+    background-position: 80px;
+    margin: 40px auto 0 auto;
   }
-  /* line 96, ../sass/screen.sass */
+  /* line 87, ../sass/screen.sass */
+  .story a:before {
+    content: "Vote";
+    font-size: 50px;
+    line-height: 88px;
+  }
+  /* line 91, ../sass/screen.sass */
   .story a:hover {
+    background-image: url(../images/vote.png);
     background-color: white;
     color: #c80048;
   }
+  /* line 95, ../sass/screen.sass */
+  .story a:hover:before {
+    content: "";
+  }
+
+  /* line 98, ../sass/screen.sass */
+  .features h1, .products h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+  }
+  /* line 103, ../sass/screen.sass */
+  .features h2, .products h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  /* line 110, ../sass/screen.sass */
+  .features h3, .products h3 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 80px;
+  }
+  /* line 115, ../sass/screen.sass */
+  .features p, .products p {
+    text-align: left;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  /* line 119, ../sass/screen.sass */
+  .features br, .products br {
+    display: block;
+  }
+
+  /* line 121, ../sass/screen.sass */
+  .features {
+    background-color: #f4f4f4;
+  }
 }
 @media screen and (max-width: 960px) {
-  /* line 100, ../sass/screen.sass */
+  /* line 124, ../sass/screen.sass */
   .story {
     padding: 220px 0 0 0;
     background-image: url(../images/hero.png);
@@ -255,7 +273,7 @@ div[class^="taste-"] {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     background-size: 580px;
   }
-  /* line 109, ../sass/screen.sass */
+  /* line 133, ../sass/screen.sass */
   .story .intro {
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
@@ -263,18 +281,18 @@ div[class^="taste-"] {
     text-align: right;
     width: 420px;
   }
-  /* line 115, ../sass/screen.sass */
+  /* line 139, ../sass/screen.sass */
   .story h1 {
     font-size: 50px;
     margin-bottom: 16px;
     text-align: right;
   }
-  /* line 119, ../sass/screen.sass */
+  /* line 143, ../sass/screen.sass */
   .story h2 {
     font-size: 32px;
     text-align: right;
   }
-  /* line 122, ../sass/screen.sass */
+  /* line 146, ../sass/screen.sass */
   .story a {
     padding: 12px 24px;
     max-width: 180px;
@@ -287,14 +305,14 @@ div[class^="taste-"] {
     border: 2px solid #c80048;
     letter-spacing: 1px;
   }
-  /* line 133, ../sass/screen.sass */
+  /* line 157, ../sass/screen.sass */
   .story a:hover {
     background-color: white;
     color: #c80048;
   }
 }
 @media screen and (max-width: 820px) {
-  /* line 137, ../sass/screen.sass */
+  /* line 161, ../sass/screen.sass */
   .story {
     padding: 20px 0 0 0;
     background-size: 420px;
@@ -302,7 +320,7 @@ div[class^="taste-"] {
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
-  /* line 143, ../sass/screen.sass */
+  /* line 167, ../sass/screen.sass */
   .story .intro {
     position: relative;
     top: 420px;
@@ -310,20 +328,20 @@ div[class^="taste-"] {
     width: 420px;
     margin: 40px auto;
   }
-  /* line 149, ../sass/screen.sass */
+  /* line 173, ../sass/screen.sass */
   .story h1 {
     font-size: 50px;
     margin-bottom: 16px;
     text-align: center;
   }
-  /* line 153, ../sass/screen.sass */
+  /* line 177, ../sass/screen.sass */
   .story h2 {
     font-size: 32px;
     text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 157, ../sass/screen.sass */
+  /* line 181, ../sass/screen.sass */
   .story {
     padding: 20px 0 0 0;
     background-size: 360px;
@@ -332,7 +350,7 @@ div[class^="taste-"] {
     background-attachment: scroll;
     min-height: 568px;
   }
-  /* line 164, ../sass/screen.sass */
+  /* line 188, ../sass/screen.sass */
   .story .intro {
     position: relative;
     top: 0;
@@ -342,20 +360,20 @@ div[class^="taste-"] {
     width: 80%;
     margin: 400px auto;
   }
-  /* line 172, ../sass/screen.sass */
+  /* line 196, ../sass/screen.sass */
   .story h1 {
     font-size: 32px;
     margin-bottom: 16px;
     text-align: center;
   }
-  /* line 176, ../sass/screen.sass */
+  /* line 200, ../sass/screen.sass */
   .story h2 {
     font-size: 22px;
     text-align: center;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 180, ../sass/screen.sass */
+  /* line 204, ../sass/screen.sass */
   .story {
     padding: 20px 0 0 0;
     background-size: 280px;
@@ -364,7 +382,7 @@ div[class^="taste-"] {
     background-attachment: scroll;
     min-height: 568px;
   }
-  /* line 187, ../sass/screen.sass */
+  /* line 211, ../sass/screen.sass */
   .story .intro {
     position: relative;
     top: 0;
@@ -374,24 +392,24 @@ div[class^="taste-"] {
     width: 80%;
     margin: 320px auto;
   }
-  /* line 195, ../sass/screen.sass */
+  /* line 219, ../sass/screen.sass */
   .story h1 {
     font-size: 28px;
     margin-bottom: 12px;
     text-align: center;
   }
-  /* line 199, ../sass/screen.sass */
+  /* line 223, ../sass/screen.sass */
   .story h2 {
     font-size: 18px;
     text-align: center;
   }
 }
-/* line 202, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 .feature {
   padding: 120px 0 90px 0;
   border-bottom: 8px solid rgba(243, 157, 55, 0.7);
 }
-/* line 205, ../sass/screen.sass */
+/* line 229, ../sass/screen.sass */
 .feature h1 {
   font-size: 24px;
   text-align: center;
@@ -399,7 +417,7 @@ div[class^="taste-"] {
   margin-bottom: 16px;
   color: #905a17;
 }
-/* line 212, ../sass/screen.sass */
+/* line 236, ../sass/screen.sass */
 .feature p {
   font-size: 16px;
   line-height: 24px;
@@ -407,34 +425,34 @@ div[class^="taste-"] {
   color: #905a17;
 }
 
-/* line 220, ../sass/screen.sass */
+/* line 244, ../sass/screen.sass */
 .ring {
   background-image: url(../images/ring.png);
 }
 
-/* line 222, ../sass/screen.sass */
+/* line 246, ../sass/screen.sass */
 .ball {
   background-image: url(../images/ball.png);
 }
 
-/* line 224, ../sass/screen.sass */
+/* line 248, ../sass/screen.sass */
 .cat-wrap {
   background-image: url(../images/cat-wrap.png);
 }
 
-/* line 227, ../sass/screen.sass */
+/* line 251, ../sass/screen.sass */
 .contact {
   padding: 160px 20px;
   background-color: #fffbf7;
   background-color: #c80048;
 }
-/* line 231, ../sass/screen.sass */
+/* line 255, ../sass/screen.sass */
 .contact h2 {
   font-size: 28px;
   text-align: center;
   color: #fbc4d0;
 }
-/* line 235, ../sass/screen.sass */
+/* line 259, ../sass/screen.sass */
 .contact a {
   padding: 12px 24px;
   max-width: 180px;
@@ -446,28 +464,42 @@ div[class^="taste-"] {
   font-size: 22px;
   border: 2px solid white;
 }
-/* line 246, ../sass/screen.sass */
+/* line 270, ../sass/screen.sass */
 .contact a:hover {
   background-color: white;
   color: #c80048;
 }
 
-/* line 251, ../sass/screen.sass */
+/* line 274, ../sass/screen.sass */
 footer {
   background-color: #f39d37;
   padding: 12px;
   text-align: center;
   color: #b9690b;
   border-bottom: 4px solid #c30046;
+  _width: 100%;
+  width: 100%;
+  height: 48px;
+}
+/* line 283, ../sass/screen.sass */
+footer .left {
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 287, ../sass/screen.sass */
+footer .right {
+  float: right;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 259, ../sass/screen.sass */
+/* line 291, ../sass/screen.sass */
 .demo-body {
   padding-top: 120px;
   background-color: black;
 }
 
-/* line 262, ../sass/screen.sass */
+/* line 294, ../sass/screen.sass */
 .demo {
   background-color: #FFF;
   position: relative;
@@ -477,14 +509,14 @@ footer {
   overflow: hidden;
 }
 
-/* line 269, ../sass/screen.sass */
+/* line 301, ../sass/screen.sass */
 .ios-pic {
   height: 568px;
   width: 320px;
   background-size: 100%;
 }
 
-/* line 273, ../sass/screen.sass */
+/* line 305, ../sass/screen.sass */
 .ios-demo {
   background-color: #FFF;
   position: relative;
@@ -494,7 +526,7 @@ footer {
   overflow: hidden;
 }
 
-/* line 282, ../sass/screen.sass */
+/* line 314, ../sass/screen.sass */
 #app-black {
   background-color: #000000;
   height: 568px;

@@ -2,6 +2,7 @@
 @import compass/css3
 $theme: #f39d37
 $helper: #c80048
+
 *
 	+box-sizing(border-box)
 	-webkit-tap-highlight-color: rgba(0,0,0,0)
@@ -9,27 +10,13 @@ h1, h2, h3, h4, h5, p, div, p
 	font-family: "微軟正黑體", "Microsoft JhengHei", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
 	color: #373737
 section
-	padding: 4em
+	padding: 4em 1em
 .main
 	position: relative
 	z-index: 1
 .slider
 	height: 80vh
 	background-color: $helper
-div[class^="taste-"]
-	height: 80vh
-	background-size: cover
-	background-position: center
-.taste-1
-	background-image: url(../images/slider-1.jpg)
-.taste-2
-	background-image: url(../images/slider-2.jpg)
-.taste-3
-	background-image: url(../images/slider-3.jpg)
-.taste-4
-	background-image: url(../images/slider-4.jpg)
-.taste-5
-	background-image: url(../images/slider-5.jpg)
 .slider-for
 	position: absolute
 	top: 0
@@ -62,7 +49,7 @@ div[class^="taste-"]
 		border: 2px solid $helper
 @media screen and (min-width: 961px)
 	.story
-		padding: 27% 0 
+		padding: 27% 0
 		background-image: url(../images/hero.png)
 		background-size: contain
 		height: 98vh
@@ -71,31 +58,68 @@ div[class^="taste-"]
 		background-attachment: fixed
 		+box-shadow(2px 2px 2px rgba(#000000, 0.2))
 		.intro
-			background-color: rgba(#fff, 0.9)
+			background-color: rgba(#fff, 1)
 			position: absolute
-			right: 6%
-			text-align: right
-			width: 420px
+			right: 0
+			left: 0
+			margin: 0 auto
+			text-align: center
+			width: 620px
 		h1
 			font-size: 50px
 			margin-bottom: 16px
-			text-align: right
+			// text-align: right
 		h2
-			font-size: 32px
-			text-align: right
+			font-size: 28px
+			// text-align: right
 		a
-			padding: 12px 24px
-			max-width: 180px
+			height: 96px
+			width: 240px
 			text-align: center
+			display: block
 			background-color: $helper
 			color: white
-			line-height: 80px
-			display: inline
-			font-size: 22px
 			border: 2px solid  $helper
+			background-size: auto 72px
+			background-repeat: no-repeat
+			background-position: 80px
+			margin: 40px auto 0 auto
+			&:before
+				content: "Vote"
+				font-size: 50px
+				line-height: 88px
 			&:hover
+				background-image: url(../images/vote.png)
 				background-color:  white
 				color: $helper
+				&:before
+					content: ""
+	.features, .products
+		h1
+			font-size: 36px
+			text-align: center
+			margin-bottom: 24px
+			font-weight: bold
+		h2
+			text-align: center
+			font-size: 24px
+			margin-bottom: 16px
+			font-weight: bold
+
+
+		h3
+			text-align: center
+			font-size: 22px
+			line-height: 28px
+			margin-bottom: 80px
+		p
+			text-align: left
+			font-size: 22px
+			line-height: 24px
+		br
+			display: block
+	.features
+		background-color: rgba(244, 244, 244, 1)
 @media screen and (max-width: 960px)
 	.story
 		padding: 220px 0 0 0 
@@ -246,7 +270,6 @@ div[class^="taste-"]
 		&:hover
 			background-color: white
 			color: $helper
-
 		
 footer
 	background-color: $theme
@@ -254,8 +277,17 @@ footer
 	text-align: center
 	color: darken($theme, 20%)
 	border-bottom: 4px solid darken($helper, 1%)
-
-
+	_width: 100%
+	width: 100%
+	height: 48px
+	.left
+		// float: left
+		letter-spacing: 1px
+		color: rgba(#ffffff, 0.7)
+	.right
+		float: right
+		letter-spacing: 1px
+		color: rgba(#ffffff, 0.7)
 .demo-body
 	padding-top: 120px
 	background-color: black
