@@ -59,7 +59,6 @@ section
 			background-color: rgba(#fff, 1)
 			position: absolute
 			right: 0
-			left: 0
 			margin: 0 auto
 			text-align: center
 			width: 620px
@@ -92,58 +91,58 @@ section
 				color: $helper
 				&:before
 					content: ""
-	.products
-		h1
-			font-size: 36px
-			text-align: center
-			margin-bottom: 24px
-			font-weight: bold
-		h2
-			text-align: center
-			font-size: 24px
-			margin-bottom: 16px
-			font-weight: bold
+.products
+	h1
+		font-size: 36px
+		text-align: center
+		margin-bottom: 24px
+		font-weight: bold
+	h2
+		text-align: center
+		font-size: 24px
+		margin-bottom: 16px
+		font-weight: bold
 
 
-		h3
-			text-align: center
-			font-size: 22px
-			line-height: 28px
-			margin-bottom: 80px
-		p
-			text-align: left
-			font-size: 22px
-			line-height: 24px
-		br
-			display: block
-	.features
-		background-color: rgba(244, 244, 244, 1)
-		h1
-			font-size: 36px
-			text-align: center
-			margin-bottom: 24px
-			font-weight: bold
-		h2
-			text-align: left
-			vertical-align: middle
-			font-size: 24px
-			margin-bottom: 16px
-			font-weight: bold
-		i
-			vertical-align: middle
-			padding-right: 6px
+	h3
+		text-align: center
+		font-size: 22px
+		line-height: 28px
+		margin-bottom: 80px
+	p
+		text-align: left
+		font-size: 22px
+		line-height: 24px
+	br
+		display: block
+.features
+	background-color: rgba(244, 244, 244, 1)
+	h1
+		font-size: 36px
+		text-align: center
+		margin-bottom: 24px
+		font-weight: bold
+	h2
+		text-align: left
+		vertical-align: middle
+		font-size: 24px
+		margin-bottom: 16px
+		font-weight: bold
+	i
+		vertical-align: middle
+		padding-right: 6px
 
-		h3
-			text-align: center
-			font-size: 22px
-			line-height: 28px
-			margin-bottom: 80px
-		p
-			text-align: left
-			font-size: 22px
-			line-height: 24px
-		br
-			display: block
+	h3
+		text-align: center
+		font-size: 22px
+		line-height: 28px
+		margin-bottom: 80px
+	p
+		text-align: left
+		font-size: 22px
+		line-height: 24px
+	br
+		display: block
 @media screen and (max-width: 960px)
 	.story
 		padding: 220px 0 0 0 
@@ -168,19 +167,27 @@ section
 			font-size: 32px
 			text-align: right
 		a
-			padding: 12px 24px
-			max-width: 180px
+			height: 96px
+			width: 240px
 			text-align: center
+			display: block
 			background-color: $helper
 			color: white
-			line-height: 80px
-			display: inline
-			font-size: 22px
 			border: 2px solid  $helper
-			letter-spacing: 1px	
+			background-size: auto 72px
+			background-repeat: no-repeat
+			background-position: 80px
+			margin: 40px auto 0 auto
+			&:before
+				content: "Vote"
+				font-size: 50px
+				line-height: 88px
 			&:hover
+				background-image: url(../images/vote.png)
 				background-color:  white
 				color: $helper
+				&:before
+					content: ""
 @media screen and (max-width: 820px)
 	.story
 		padding: 20px 0 0 0
@@ -201,6 +208,28 @@ section
 		h2
 			font-size: 32px
 			text-align: center
+		a
+			height: 96px
+			width: 240px
+			text-align: center
+			display: block
+			background-color: $helper
+			color: white
+			border: 2px solid  $helper
+			background-size: auto 72px
+			background-repeat: no-repeat
+			background-position: 80px
+			margin: 40px auto 0 auto
+			&:before
+				content: "Vote"
+				font-size: 50px
+				line-height: 88px
+			&:hover
+				background-image: url(../images/vote.png)
+				background-color:  white
+				color: $helper
+				&:before
+					content: ""
 @media screen and (max-width: 600px)
 	.story
 		padding: 20px 0 0 0
@@ -224,6 +253,28 @@ section
 		h2
 			font-size: 22px
 			text-align: center
+		a
+			height: 96px
+			width: 240px
+			text-align: center
+			display: block
+			background-color: $helper
+			color: white
+			border: 2px solid  $helper
+			background-size: auto 72px
+			background-repeat: no-repeat
+			background-position: 80px
+			margin: 40px auto 0 auto
+			&:before
+				content: "Vote"
+				font-size: 50px
+				line-height: 88px
+			&:hover
+				background-image: url(../images/vote.png)
+				background-color:  white
+				color: $helper
+				&:before
+					content: ""
 @media screen and (max-width: 400px)
 	.story
 		padding: 20px 0 0 0
@@ -247,6 +298,28 @@ section
 		h2
 			font-size: 18px
 			text-align: center
+		a
+			height: 96px
+			width: 240px
+			text-align: center
+			display: block
+			background-color: $helper
+			color: white
+			border: 2px solid  $helper
+			background-size: auto 72px
+			background-repeat: no-repeat
+			background-position: 80px
+			margin: 40px auto 0 auto
+			&:before
+				content: "Vote"
+				font-size: 50px
+				line-height: 88px
+			&:hover
+				background-image: url(../images/vote.png)
+				background-color:  white
+				color: $helper
+				&:before
+					content: ""
 .feature
 	padding: 120px 0 90px 0
 	border-bottom: 8px solid rgba($theme, 0.7)
@@ -305,7 +378,7 @@ section
 	
 footer
 	background-color: $theme
-	padding: 16px
+	padding: 1 6px
 	text-align: center
 	color: darken($theme, 20%)
 	_width: 100%
